@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071522" data-theme-color>
+  <script src="assets/js/theme-preference.js"></script>
+  <title>Sourabha Jena - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/resume.css">
+  <link rel="stylesheet" href="assets/css/showcase.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=20261010-navbar-responsive">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="assets/images/my-avatar.png" alt="SOURABHA JENA" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="SOURABHA JENA">SOURABHA JENA</h1>
+
+          <p class="title">MCA Graduate | Software Developer (Fresher)</p>
+        </div>
+
+        <button class="info_more-btn" type="button" aria-label="Show contacts" aria-expanded="false" aria-controls="sidebar-contacts" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more" id="sidebar-contacts">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sourabhajena2003@gmail.com" class="contact-link">sourabhajena2003@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+917735131782" class="contact-link">+91 7735131782</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Jagatsinghpur, Odisha, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list" aria-label="Social profiles">
+          <li class="social-item">
+            <a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" type="button" aria-current="page" data-nav-link="about">About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" type="button" data-nav-link="resume">Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" type="button" data-nav-link="portfolio">Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" type="button" data-nav-link="blog">Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" type="button" data-nav-link="contact">Contact</button>
+          </li>
+
+        </ul>
+
+        <button class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Color theme" title="Enable light theme" data-theme-toggle>
+          <ion-icon name="moon-outline" aria-hidden="true"></ion-icon>
+          <span data-theme-label>Dark</span>
+        </button>
+
+      </nav>
+
+      <div class="page-container" data-page-container>Loading portfolio…</div>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script type="module" src="assets/js/main.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <noscript><p class="noscript-message">This portfolio needs JavaScript enabled to load its content.</p></noscript>
+</body>
+
+</html>
